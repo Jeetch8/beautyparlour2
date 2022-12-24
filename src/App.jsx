@@ -18,6 +18,18 @@ import {
 function App() {
   return (
     <div>
+      {/* Header */}
+      <div className="flex justify-between my-2">
+        <h1 className="ml-8">Logo</h1>
+        <div className="flex gap-4 mr-8">
+          <button className=" bg-slate-400 text-white font-medium px-5 py-1 rounded-md">
+            Login
+          </button>
+          <button className=" bg-green-400 text-white font-medium px-5 py-1 rounded-md">
+            Register
+          </button>
+        </div>
+      </div>
       {/* Hero section */}
       <div className=" grid grid-flow-col grid-cols-3 grid-rows-2 gap-1">
         <img src="https://images.unsplash.com/photo-1626383137804-ff908d2753a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
@@ -171,6 +183,10 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Footer */}
+      <div className="flex justify-center text-[13px] h-[5vh]">
+        Powered by @CyberSpace technologies
       </div>
     </div>
   );
