@@ -61,35 +61,41 @@ function App() {
         </div>
         {/* Right side */}
         <div className="max-w-[50vw] w-full text-center">
-          <div className="mt-8">
-            <h2 className="font-bold text-[25px]">We Provide</h2>
-            <h2 className="text-[20px]">Value for Money Services</h2>
+          <div className="mt-8 pb-4">
+            <h2 className="font-bold text-[30px]">We Provide</h2>
+            <h2 className="text-[25px] font-light">Value for Money Services</h2>
           </div>
-          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] w-[30vw] p-5 flex flex-col justify-center items-center text-center rounded-lg my-6 mx-auto">
-            <MakeUpSVG />
-            <h3>Makeup</h3>
-            <h3 className="max-w-[20vw] text-center">
+          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] w-[25vw] p-5 flex flex-col justify-center items-center text-center rounded-lg my-6 mx-auto">
+            <div className="mt-4">
+              <MakeUpSVG />
+            </div>
+            <h3 className="font-medium mt-4">Makeup</h3>
+            <h3 className="max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
               Talented make up artists who ensure you look your best
             </h3>
           </div>
-          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[30vw] p-5 rounded-lg my-6 mx-auto">
-            <MehandiSVG />
-            <h3>Mehendi</h3>
-            <h3 className="max-w-[20vw]">
+          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[25vw] p-5 rounded-lg my-6 mx-auto">
+            <div className="mt-4">
+              <MehandiSVG />
+            </div>
+            <h3 className="font-medium mt-4">Mehendi</h3>
+            <h3 className="max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
               Experienced mehendi artists who provide a wide range of designs
             </h3>
           </div>
-          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[30vw] p-5 rounded-lg my-6 mx-auto">
-            <DecorationSVG />
-            <h3>Decoration</h3>
-            <h3 className="w-[20vw]">
+          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[25vw] p-5 rounded-lg my-6 mx-auto">
+            <div className="mt-4">
+              <DecorationSVG />
+            </div>
+            <h3 className="font-medium mt-4">Decoration</h3>
+            <h3 className="max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
               Professionally designed decor at attractive prices
             </h3>
           </div>
         </div>
       </div>
       {/* Section 3 */}
-      <div className="text-center my-20">
+      <div className="text-center my-20 px-10">
         <h1 className="font-bold text-[30px]">How it Works</h1>
         <h3 className="text-[20px] font-light mb-20">
           5 easy steps for a hassle-free makeover
