@@ -19,16 +19,8 @@ function App() {
   return (
     <div>
       {/* Header */}
-      <div className="flex justify-between my-2">
+      <div className="flex justify-between my-4">
         <h1 className="ml-8">Logo</h1>
-        <div className="flex gap-4 mr-8">
-          <button className=" bg-slate-400 text-white font-medium px-5 py-1 rounded-md">
-            Login
-          </button>
-          <button className=" bg-green-400 text-white font-medium px-5 py-1 rounded-md">
-            Register
-          </button>
-        </div>
       </div>
       {/* Hero section */}
       <div className=" grid grid-flow-col grid-cols-3 grid-rows-2 gap-1">
@@ -40,11 +32,11 @@ function App() {
         <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
       </div>
       {/* Section2 */}
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap lg:flex-nowrap ">
         {/* Left side */}
-        <div className="max-w-[50vw] w-full text-center">
+        <div className="max-w-[50vw] w-full text-center lg:h-[100vh] h-[70vh]">
           <div className="flex-col flex items-center max-w-[34vw] mt-4 h-full justify-center mx-auto">
-            <div className="mb-4 flex justify-between w-full">
+            <div className="mb-4 flex justify-between w-full flex-wrap gap-5 lg:gap-0">
               <input
                 className=" bg-zinc-100 py-3 rounded-full pl-4 pr-10"
                 type={"text"}
@@ -72,35 +64,35 @@ function App() {
           </div>
         </div>
         {/* Right side */}
-        <div className="max-w-[50vw] w-full text-center">
+        <div className="lg:max-w-[50vw] w-full text-center">
           <div className="mt-8 pb-4">
             <h2 className="font-bold text-[30px]">We Provide</h2>
             <h2 className="text-[25px] font-light">Value for Money Services</h2>
           </div>
-          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] w-[25vw] p-5 flex flex-col justify-center items-center text-center rounded-lg my-6 mx-auto">
+          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] w-[75vw] lg:w-[25vw] p-5 flex flex-col justify-center items-center text-center rounded-lg my-6 mx-auto">
             <div className="mt-4">
               <MakeUpSVG />
             </div>
             <h3 className="font-medium mt-4">Makeup</h3>
-            <h3 className="max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
+            <h3 className="lg:max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
               Talented make up artists who ensure you look your best
             </h3>
           </div>
-          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[25vw] p-5 rounded-lg my-6 mx-auto">
+          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[75vw] lg:w-[25vw] p-5 rounded-lg my-6 mx-auto">
             <div className="mt-4">
               <MehandiSVG />
             </div>
             <h3 className="font-medium mt-4">Mehendi</h3>
-            <h3 className="max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
+            <h3 className="lg:max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
               Experienced mehendi artists who provide a wide range of designs
             </h3>
           </div>
-          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[25vw] p-5 rounded-lg my-6 mx-auto">
+          <div className="shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] flex flex-col justify-center items-center text-center w-[75vw] lg:w-[25vw] p-5 rounded-lg my-6 mx-auto">
             <div className="mt-4">
               <DecorationSVG />
             </div>
             <h3 className="font-medium mt-4">Decoration</h3>
-            <h3 className="max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
+            <h3 className="lg:max-w-[20vw] text-center mt-2 mb-4 text-[15px] font-light">
               Professionally designed decor at attractive prices
             </h3>
           </div>
@@ -112,8 +104,8 @@ function App() {
         <h3 className="text-[20px] font-light mb-20">
           5 easy steps for a hassle-free makeover
         </h3>
-        <div className="flex h-[40vh] relative">
-          <div className="text-center w-[200px]">
+        <div className="flex h-[40vh] relative flex-wrap lg:flex-nowrap gap-10 lg:gap-0">
+          <div className="text-center w-[200px] mx-auto">
             <div className="flex justify-center">
               <TalkWithUsSVG />
             </div>
@@ -124,11 +116,11 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="flex items-center h-full max-h-[30vh]">
+          <div className="flex items-center h-full max-h-[30vh] hidden lg:flex">
             <PurpleOrangeDottedLineSVG />
           </div>
-          <div className="mt-auto">
-            <div className="flex justify-center">
+          <div className="mt-auto mx-auto">
+            <div className="flex justify-center w-[200px]">
               <ExploreOptionsSVG />
             </div>
             <div className="w-[200px] text-center">
@@ -138,10 +130,10 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="flex items-center h-[30vh]">
+          <div className="flex items-center h-[30vh] hidden lg:flex">
             <OrageBlueDottedLineSVG />
           </div>
-          <div className="w-[250px] text-center">
+          <div className="w-[250px] text-center mx-auto">
             <div className="flex justify-center">
               <CustomPackageSVG />
             </div>
@@ -154,10 +146,10 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="h-[30vh] flex items-center">
+          <div className="h-[30vh] flex items-center hidden lg:flex">
             <BlueRedDottedLineSVG />
           </div>
-          <div className="text-center mt-auto">
+          <div className="text-center mt-auto mx-auto">
             <div className="w-[220px] flex justify-center">
               <BookUsSVG />
             </div>
@@ -168,10 +160,10 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="flex items-center h-full max-h-[30vh]">
+          <div className="flex items-center h-full max-h-[30vh] hidden lg:flex">
             <RedGreenDottedLineSVG />
           </div>
-          <div className="w-[220px] text-center">
+          <div className="w-[220px] text-center mx-auto">
             <div className="flex justify-center">
               <RelaxSVG />
             </div>
@@ -185,9 +177,9 @@ function App() {
         </div>
       </div>
       {/* Footer */}
-      <div className="flex justify-center text-[13px] h-[5vh]">
+      {/* <div className="flex justify-center text-[13px] h-[5vh]">
         Powered by @CyberSpace technologies
-      </div>
+      </div> */}
     </div>
   );
 }
