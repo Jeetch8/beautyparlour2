@@ -19,8 +19,10 @@ function App() {
   return (
     <div>
       {/* Header */}
-      <div className="flex justify-between my-4">
-        <h1 className="ml-8">Logo</h1>
+      <div className="flex justify-between py-3">
+        <h1 className="ml-8 text-white font-medium bg-gradient-to-r from-red-500 to-red-800 rounded-lg px-2 pt-1 pb-2">
+          Logo
+        </h1>
       </div>
       {/* Hero section */}
       <div className=" grid grid-flow-col grid-cols-3 grid-rows-2 gap-1">
@@ -34,7 +36,7 @@ function App() {
       {/* Section2 */}
       <div className="flex justify-between flex-wrap lg:flex-nowrap ">
         {/* Left side */}
-        <div className="max-w-[50vw] w-full text-center lg:h-[100vh] h-[70vh]">
+        <div className="lg:max-w-[50vw] w-full text-center lg:h-[120vh] h-[70vh] bg-gradient-to-r from-rose-100 to-teal-100 rounded-lg">
           <div className="flex-col flex items-center max-w-[34vw] mt-4 h-full justify-center mx-auto">
             <div className="mb-4 flex justify-between w-full flex-wrap gap-5 lg:gap-0">
               <input
@@ -58,7 +60,7 @@ function App() {
               <option value="mehendi">Mehendi</option>
               <option value="decoration">Decoration</option>
             </select>
-            <button className="mr-auto ml-3 mt-5 border-[1px] border-solid border-black rounded-full px-4 py-2">
+            <button className="mr-auto ml-3 mt-5 border-[1px] rounded-lg px-4 py-2 bg-gradient-to-tr from-indigo-300 to-purple-400 text-white font-medium">
               Contact Us
             </button>
           </div>
@@ -104,7 +106,7 @@ function App() {
         <h3 className="text-[20px] font-light mb-20">
           5 easy steps for a hassle-free makeover
         </h3>
-        <div className="flex h-[40vh] relative flex-wrap lg:flex-nowrap gap-10 lg:gap-0">
+        <div className="flex relative flex-wrap lg:flex-nowrap gap-10 lg:gap-0">
           <div className="text-center w-[200px] mx-auto">
             <div className="flex justify-center">
               <TalkWithUsSVG />
@@ -116,7 +118,7 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="flex items-center h-full max-h-[30vh] hidden lg:flex">
+          <div className="flex items-center h-[30vh] hidden lg:flex">
             <PurpleOrangeDottedLineSVG />
           </div>
           <div className="mt-auto mx-auto">
@@ -160,7 +162,7 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="flex items-center h-full max-h-[30vh] hidden lg:flex">
+          <div className="flex items-center h-full h-[30vh] hidden lg:flex">
             <RedGreenDottedLineSVG />
           </div>
           <div className="w-[220px] text-center mx-auto">
@@ -176,10 +178,9 @@ function App() {
           </div>
         </div>
       </div>
-      {/* Footer */}
-      {/* <div className="flex justify-center text-[13px] h-[5vh]">
-        Powered by @CyberSpace technologies
-      </div> */}
+      <div className="text-[13px] flex justify-center font-medium text-white py-4 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-yellow-200 via-emerald-200 to-yellow-200">
+        @ Powered by CyberSpace Technologies
+      </div>
     </div>
   );
 }
